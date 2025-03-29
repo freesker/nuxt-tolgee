@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/freesker/nuxt-tolgee.git"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Freesker",
   "description": "Tolgee plugin for Nuxt 3",
   "license": "MIT",
