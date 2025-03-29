@@ -44,7 +44,7 @@ export default defineNuxtConfig({
 </template>
 
 <script setup lang="ts">
-const { TolgeeProvider } = useTolgee()
+import { TolgeeProvider } from '@tolgee/vue';
 </script>
 ```
 
