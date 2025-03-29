@@ -1,5 +1,4 @@
 import {
-  TolgeeProvider,
   T,
 } from '@tolgee/vue';
 import { computed, ref, useNuxtApp } from '#imports';
@@ -18,7 +17,6 @@ export function useTolgee() {
   });
 
   return {
-    TolgeeProvider: typeof TolgeeProvider,
     language,
     t: $tolgee.t,
     T,
