@@ -24,7 +24,10 @@ export default defineNuxtPlugin({
       .use(LanguageStorage());
 
     if (config.contentDeliveryURL) {
-      tolgeeOpts.use(BackendFetch({ prefix: config.contentDeliveryURL }));
+      tolgeeOpts.use(BackendFetch({ prefix: config.contentDeliveryURL })); // Use CDN files
+    }
+    else {
+      tolgeeOpts.use(BackendFetch()); // Use local files
     }
 
     const tolgee = tolgeeOpts.init({
